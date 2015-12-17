@@ -1,4 +1,16 @@
-import Foundation
+/*
+but first, a utility to print a UInt8
+255 -> "ff"
+ 10 -> "0a"
+*/
+
+public func intToHexByte(n: UInt8) -> String {
+    let s = NSString(format: "%x", n) as String
+    if s.characters.count == 1 {
+        return "0" + s
+    }
+    return s
+}
 
 // useful String extensions for dealing with binary data
 
@@ -96,20 +108,3 @@ public extension String {
         return sL.map { singleHexByteStringToInt($0) }
     }
 }
-
-// end of String extension
-
-public typealias ByteString = String
-
-public extension ByteString {
-    
-    /* e.g. put spaces every 2 characters */
-    /* works with characters, not UTF8, so only for ByteString */
-    
-    public func insertSeparator(sep: String, every n: Int) -> ByteString {
-        
-        let ret = self.divideIntoChunks(size: n)
-        return ret.joinWithSeparator(sep)
-    }
-}
-

@@ -1,14 +1,20 @@
-import Foundation
-
 public func +(lhs: BinaryData, rhs: BinaryData) -> BinaryData {
     return BinaryData(lhs.data + rhs.data)
 }
+
+/*
+Everything is public!
+The idea here is to make binary data:
+    printable
+    typed
+    init from ByteString (typealias for String)
+*/
 
 public class BinaryData : CustomStringConvertible, Indexable {
     
     public var data: [UInt8] = []
     
-    // we allow data to be empty
+    // we allow data to be empty as default
     public init(_ input: [UInt8] = []) {
         data = input
     }

@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		756BA10F1C22FA3E0041241A /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756BA10E1C22FA3E0041241A /* Key.swift */; };
+		756BA1111C22FC050041241A /* ByteString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756BA1101C22FC050041241A /* ByteString.swift */; };
+		756BA1131C22FC3A0041241A /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756BA1121C22FC3A0041241A /* Random.swift */; };
 		7594AF821C21EE4900A8E754 /* BinaryData.h in Headers */ = {isa = PBXBuildFile; fileRef = 7594AF811C21EE4900A8E754 /* BinaryData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7594AF891C21EE4900A8E754 /* BinaryData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7594AF7E1C21EE4900A8E754 /* BinaryData.framework */; };
 		7594AF8E1C21EE4900A8E754 /* BinaryDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594AF8D1C21EE4900A8E754 /* BinaryDataTests.swift */; };
 		7594AF991C21EE5300A8E754 /* BinaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594AF981C21EE5300A8E754 /* BinaryData.swift */; };
 		7594AF9B1C21EE5800A8E754 /* StringStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594AF9A1C21EE5800A8E754 /* StringStuff.swift */; };
-		7594AF9D1C21EF0000A8E754 /* IntStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594AF9C1C21EF0000A8E754 /* IntStuff.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		756BA10E1C22FA3E0041241A /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		756BA1101C22FC050041241A /* ByteString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteString.swift; sourceTree = "<group>"; };
+		756BA1121C22FC3A0041241A /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		7594AF7E1C21EE4900A8E754 /* BinaryData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BinaryData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7594AF811C21EE4900A8E754 /* BinaryData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryData.h; sourceTree = "<group>"; };
 		7594AF831C21EE4900A8E754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,7 +39,6 @@
 		7594AF8F1C21EE4900A8E754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7594AF981C21EE5300A8E754 /* BinaryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryData.swift; sourceTree = "<group>"; };
 		7594AF9A1C21EE5800A8E754 /* StringStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringStuff.swift; sourceTree = "<group>"; };
-		7594AF9C1C21EF0000A8E754 /* IntStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntStuff.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +81,12 @@
 		7594AF801C21EE4900A8E754 /* BinaryData */ = {
 			isa = PBXGroup;
 			children = (
-				7594AF981C21EE5300A8E754 /* BinaryData.swift */,
-				7594AF9A1C21EE5800A8E754 /* StringStuff.swift */,
 				7594AF811C21EE4900A8E754 /* BinaryData.h */,
-				7594AF9C1C21EF0000A8E754 /* IntStuff.swift */,
+				7594AF981C21EE5300A8E754 /* BinaryData.swift */,
+				756BA1101C22FC050041241A /* ByteString.swift */,
+				756BA10E1C22FA3E0041241A /* Key.swift */,
+				756BA1121C22FC3A0041241A /* Random.swift */,
+				7594AF9A1C21EE5800A8E754 /* StringStuff.swift */,
 				7594AF831C21EE4900A8E754 /* Info.plist */,
 			);
 			path = BinaryData;
@@ -204,7 +210,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7594AF991C21EE5300A8E754 /* BinaryData.swift in Sources */,
-				7594AF9D1C21EF0000A8E754 /* IntStuff.swift in Sources */,
+				756BA10F1C22FA3E0041241A /* Key.swift in Sources */,
+				756BA1131C22FC3A0041241A /* Random.swift in Sources */,
+				756BA1111C22FC050041241A /* ByteString.swift in Sources */,
 				7594AF9B1C21EE5800A8E754 /* StringStuff.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +402,7 @@
 				7594AF941C21EE4900A8E754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7594AF951C21EE4900A8E754 /* Build configuration list for PBXNativeTarget "BinaryDataTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +411,7 @@
 				7594AF971C21EE4900A8E754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
